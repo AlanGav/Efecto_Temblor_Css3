@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang='es'>
+<head>
+	<meta charset='utf-8'/>
+	<title>Efecto Temblor con css3</title>
+	<style type="text/css">
+
+			body{
+				background: #000;
+				padding:20px;
+			}
+		@-webkit-keyframes animar{
+			0%{-webkit-transform:translate(0px,0px);}
+			10%{-webkit-transform:translate(20px,0px);}
+			20%{-webkit-transform:translate(0px,0px);}
+			30%{-webkit-transform:translate(20px,0px);}
+			40%{-webkit-transform:translate(0px,0px);}
+			50%{-webkit-transform:translate(20px,0px);}
+			60%{-webkit-transform:translate(0px,0px);}
+			70%{-webkit-transform:translate(20px,0px);}
+			80%{-webkit-transform:translate(0px,0px);}
+			90%{-webkit-transform:translate(20px,0px);}
+			100%{-webkit-transform:translate(0px,0px);}
+		}
+			.temblor{
+				margin:0 auto;
+				background: gray;
+				width: 300px;
+				height: 100px;
+				border-radius: 8px;
+				font-family: Arial;
+				text-align: center;
+				color:white;
+			}
+			.temblor:hover{
+				-webkit-animation:animar .6s 1;
+			}
+
+	</style>
+</head>
+<body>
+	<div class='temblor'>
+		<span>Efecto temblor</span>
+	</div>
+</body>
+</html>
